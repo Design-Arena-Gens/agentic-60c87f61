@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f0;
+  --foreground: #1a1a1a;
+  --primary: #2d5f4f;
+  --primary-soft: #90b8a8;
+  --accent: #6b4e3d;
+  --surface: #ffffff;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+  --muted: #6b6b6b;
+  --shadow-soft: 0 12px 32px -12px rgb(45 95 79 / 0.32);
+}
+
+@theme inline {
+  --color-sand: var(--background);
+  --color-ink: var(--foreground);
+  --color-ink-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-dark: #22463b;
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --font-primary: var(--font-primary);
+  --radius-card: 20px;
+  --radius-button: 14px;
+  --radius-input: 12px;
+  --radius-chip: 8px;
+  --shadow-card: 0 4px 12px rgb(0 0 0 / 0.08);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: var(--foreground);
+}
+
+.phone-frame {
+  width: 320px;
+  height: 676px;
+  border-radius: 32px;
+  padding: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgb(0 0 0 / 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.screen-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
